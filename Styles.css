@@ -8,3 +8,14 @@ form {
     text-align: center;
 
 }
+
+.btn-default {
+    width: 150px;
+    height: 150px;
+
+}
+
+.fa {
+    align:center;
+    font-size:110px;
+}
