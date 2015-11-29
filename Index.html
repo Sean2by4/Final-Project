@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- code borrowed from w3 for the javascript tabs. (http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_tab_events2&stacked=h)-->
+    <head>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="myScript.js"></script>
+
+        <style>
+            body {
+                font-family: 'Oswald', serif;
+                font-size: 20px;
+                background-color: whitesmoke;
+                border-color:orangered;
+            }
+
+
+        </style>
+    </head>
+
+    <div class="page-header" style="text-align:center">
+        <h1>The Carbon Neutrality Project  <br><small>People solving climate change, one tree at a time</small></h1>
+    </div>
+
+    <nav class="navbar navbar-default" style="height: 50px;>
+    <div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">MoraLab</a>
+    </div>
+    <div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="forms.html">Home</a></li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+
+
+    <div class="panel panel-default">
+
+        <div class="container-fluid">
+
+            <div class="row" id="test" >
+                <div class="col-xs-3 col-md-3 show-grid" style="border: solid; height:500px"  >
+
+                </div>
+                <div class="col-xs-9 col-md-9 show-grid" style="border: solid; height:500px">
+
+
+
+
+
+                    <form name="myForm" id="demo" action="demo_form.html" onsubmit="return validateForm()" method="get">
+                        <div class="form-group">
+                            <label for="username">User name: </label>
+                            <input type="text" name="name" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password: </label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm">Confirm Password: </label>
+                            <input type="password" name="confirm" id="confirm">
+                        </div>
+                        <input type="submit" value="Submit">
+                    </form>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="panel-footer" style="text-align:center height:50px" >Copyright 2015 Sean Baran</div>
+    </div>
+
+
+
+
+
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
