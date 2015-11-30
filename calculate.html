@@ -15,7 +15,7 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="myScript.js"></script>
+        <script src="scripts.js"></script>
         <link rel="stylesheet" type="text/css" href="Styles.css">
     </head>
 
@@ -61,16 +61,91 @@
 
                                 <p><div class="btn-group" role="group" aria-label="...">
 
-                                <button type="button" class="btn btn-default"><i class="fa fa-plane"></i><br>TRANSPORT</button>
-                                <button type="button" class="btn btn-default"><i class="fa fa-home"></i><br>HOUSING</button>
-                                <button type="button" class="btn btn-default"><i class="fa fa-cutlery"></i><br>FOOD</button>
-                                <button type="button" class="btn btn-default"><i class="fa fa-money"></i> <br>SHOPPING</button>
+                                <button type="button" class="btn btn-default active"><i class="fa fa-plane"></i><br>TRANSPORT</button>
+                                <button type="button" class="btn btn-default" disabled><i class="fa fa-home"></i><br>HOUSING</button>
+                                <button type="button" class="btn btn-default" disabled><i class="fa fa-cutlery"></i><br>FOOD</button>
+                                <button type="button" class="btn btn-default" disabled><i class="fa fa-money"></i> <br>SHOPPING</button>
 
 
                             </div></p>
                             </div>
 
                         </div>
+
+
+                    <form action="http://www.webzonetechno.com/moralab/welcome/carbon_insert" method="POST" id="myForm">
+                        <input type="hidden" name="search" value="">
+                        <input type="hidden" name="pre_year" value="">
+
+                        <div class="form-group " style="width:340px;">
+                            <div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <select name="unit_conversion" onchange="common_carbon()" id="unit_value" class="form-control selectWidth">
+                                    <option value="mile" selected="">Miles</option>
+                                    <option value="km">Kilometer</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon miles" data-original-title="" title=""><i class="fa fa-car"></i></span>
+                                <input type="text" name="miles_year" id="miles_year1" onchange="common_carbon()" class="form-control" value="1000000" placeholder="Miles per year">
+                                <input type="hidden" name="year" id="year">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon miles" data-original-title="" title=""><i class="fa fa-car"></i></span>
+                                <input type="text" name="miles_gallon" id="miles_gallon1" onchange="common_carbon()" class="form-control" value="30" placeholder="Miles per gallon">
+                                <input type="hidden" name="new_gallon" id="miles_gallon" value="428.70">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group " style="width:340px;">
+                            <div class="input-group">
+                                <span class="input-group-addon"></span>
+                                <select name="diesel" onchange="common_carbon()" id="option_value" class="form-control selectWidth">
+                                    <option value="diesel">Diesel</option>
+                                    <option value="gasolin" selected="">Gasolin</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon bus" data-original-title="" title=""><i class="fa fa-bus"></i></span>
+                                <input type="text" name="bus" id="bus1" onchange="common_carbon()" class="form-control" value="0" placeholder="Bus">
+                                <input type="hidden" name="new_bus" id="bus" value="0.00">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon transit" data-original-title="" title=""><i class="fa fa-train"></i></span>
+                                <input type="text" name="transit_rail" onchange="common_carbon()" id="transit_rail1" class="form-control" value="10000" placeholder="Rail">
+                                <input type="hidden" name="new_transit" id="transit_rail" value="2.05">
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon flown" data-original-title="" title=""><i class="fa fa-plane"></i></span>
+                                <input type="text" name="miles_flown" onchange="common_carbon()" id="miles_flown1" class="form-control" value="9000" placeholder="Plain">
+                                <input type="hidden" name="new_miles_flown" id="miles_flown" value="4.01">
+                                <input type="hidden" name="total_carbon" id="total_carbon" value="434.77">
+                            </div>
+                        </div>
+
+
+
+                    </form>
 
 
             </div>
