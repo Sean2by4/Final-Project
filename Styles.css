@@ -15,7 +15,7 @@ form {
 
 }
 
-.fa {
+.bigger {
     align:center;
     font-size:110px;
 }
@@ -37,7 +37,7 @@ form {
 nav {
     height: 40px;
     width: 100%;
-    background: #455868;
+    background: black;
     font-size: 11pt;
     font-family: 'PT Sans', Arial, sans-serif;
     font-weight: bold;
@@ -77,7 +77,7 @@ nav li:last-child a {
 }
 
 nav a:hover, nav a:active {
-    background-color: #8c99a4;
+    background-color: dimgrey;
 }
 
 nav a#pull {
