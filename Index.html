@@ -1,104 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <!-- code borrowed from w3 for the javascript tabs. (http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_tab_events2&stacked=h)-->
-    <head>
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="scripts.js"></script>
-        <script src="Moracarbon.js"></script>
-        <link rel="stylesheet" type="text/css" href="Styles.css">
-    </head>
-
-    <div class="page-header" style="text-align:center">
-        <h1>The Carbon Neutrality Project  <br><small>People solving climate change, one tree at a time</small></h1>
-    </div>
-
-
-    <nav class="clearfix">
-        <ul class="clearfix">
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="calculate.html">Calculator</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="#">blank</a></li>
-            <li><a href="#">blank</a></li>
-            <li><a href="#">blank</a></li>
-        </ul>
-    </nav>
-
-
-
-    <div class="panel panel-default">
-
-        <div class="container-fluid">
-
-            <div class="row" id="test" >
-
-                <div class="col-xs-8 col-md-8 show-grid" style="border: solid; height:800px">
-                    <h2>Welcome to the Carbon Neutrality Project!</h2>
-                    <p>
-
-                        Our website allows you to calculate your carbon footprint, so that you can
-                        find out exactly how many trees you will need to plant to be completely
-                        carbon neutral.
-
-                    </p>
-                </div>
-                <div class="col-xs-4 col-md-4 show-grid" style="border: solid; height:800px"  >
-                    <form name="loginform" id="demo" action="demo_form.html" onsubmit="return validateForm()" method="get"  >
-                        Login
-                        <div class="form-group">
-                            <input type="text" name="name" id="username" placeholder="Username" style="width:180px">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password" id="password" placeholder="Password" style="width:180px">
-                        </div>
-                        <input type="submit" value="Log in">
-                    </form>
-
-                    <br>
-
-                    <form name="signupform" id="demo" action="demo_form.html" onsubmit="return validateForm()" method="get"  >
-                        Sign Up
-                        <div class="form-group">
-                            <input type="text" name="name" id="username" placeholder="Username" style="width:180px">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" id="email" placeholder="Email" style="width:180px">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="password" id="password" placeholder="Password" style="width:180px">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" style="width:180px">
-                        </div>
-                        <input type="submit" value="Register">
-                    </form>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="panel-footer" style="text-align:center height:50px" >Copyright 2015 Eugene Lao & Sean Baran</div>
-    </div>
-
-
-
-
-
-    <title></title>
+  <meta charset="UTF-8">
+  <!-- code borrowed from w3 for the javascript tabs. (http://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_ref_js_tab_events2&stacked=h)-->
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="scripts.js"></script>
+  <script src="Moracarbon.js"></script>
+  <link rel="stylesheet" type="text/css" href="Styles.css">
 </head>
 <body>
+<div class="page-header" style="text-align:center">
+  <h1>The Carbon Neutrality Project <br>
+    <small>People solving climate change, one tree at a time</small>
+  </h1>
+</div>
+<nav class="clearfix">
+  <ul class="clearfix">
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="calculate.html">Calculator</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="#">blank</a></li>
+    <li><a href="#">blank</a></li>
+    <li><a href="#">blank</a></li>
+  </ul>
+</nav>
+<div class="panel panel-default">
+  <div class="container-fluid">
+    <div class="row" id="test">
+      <div class="col-xs-8 col-md-8 show-grid" style="border: solid; height:800px">
+        <h2>Welcome to the Carbon Neutrality Project!</h2>
 
+        <p>Our website allows you to calculate your carbon footprint, so that you canfind out exactly how many trees you
+          will need to plant to be completely carbon neutral.</p>
+      </div>
+      <div class="col-xs-4 col-md-4 show-grid" style="border: solid; height:800px">
+        <form name="loginform" id="demo" action="demo_form.html" onsubmit="return validateForm()" method="get">
+          Login
+          <div class="form-group">
+            <input type="text" name="name" id="username" placeholder="Username" style="width:180px">
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" id="password" placeholder="Password" style="width:180px">
+          </div>
+          <input type="submit" value="Log in">
+        </form>
+        <br>
+        <form name="signupform" id="demo" action="demo_form.html" onsubmit="return validateForm()" method="get">
+          Sign Up
+          <div class="form-group">
+            <input type="text" name="name" id="username" placeholder="Username" style="width:180px">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" placeholder="Email" style="width:180px">
+          </div>
+          <div class="form-group">
+            <input type="password" name="password" id="password" placeholder="Password" style="width:180px">
+          </div>
+          <div class="form-group">
+            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" style="width:180px">
+          </div>
+          <input type="submit" value="Register">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="panel-footer" style="text-align:center; height:50px">Copyright 2015 Eugene Lao & Sean Baran</div>
+</div>
 </body>
 </html>
