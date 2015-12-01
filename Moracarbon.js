@@ -90,7 +90,7 @@ function common_carbon() {
     document.getElementById("amount").innerHTML = totalcal.toFixed(2);
     $('#dis').hide();
     $('#andi').show();
-
+    return totalcal;
 }
 
 function common_housing() {
@@ -159,7 +159,7 @@ function common_housing() {
 
 
 
-
+    return totalhouse;
 }
 
 
@@ -239,7 +239,7 @@ function common_food() {
     $('#disfood').hide();
     $('#andifood').show();
 
-
+    return totalfood;
 }
 
 function common_goods() {
@@ -305,7 +305,7 @@ function common_goods() {
     $('#andigoods').show();
 
 
-
+    return totalgoods;
 }
 $(document).ready(function () {
     $('.miles').tooltip({title: "miles per gallon", placement: "top"});
