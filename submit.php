@@ -13,11 +13,10 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
     $result = mysql_query("SELECT * FROM registration WHERE email='$email' AND password='$password'");
     $data = mysql_num_rows($result);
 
-
     if($data==1){
-        $query = mysql_query("insert into registration(carbon) values ('$carbon') WHERE email='$email'");
+        $query = mysql_query("update registration set carbon='$carbon' WHERE email='$email' LIMIT 1");
         $id = mysql_result(mysql_query("SELECT carbon FROM registration WHERE email='$email' LIMIT 1"),0);
-        echo "Your current carbon emissions are: " . $id ;
+        echo "Thanks for entering your carbon footprint! Head to MyCarbon to check it out!" ;
     }else{
         echo "Email or Password is wrong...!!!!";
     }
