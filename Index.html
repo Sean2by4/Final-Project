@@ -24,13 +24,16 @@
     <small>People solving climate change, one tree at a time</small>
   </h1>
 </div>
+
+
+
 <nav class="clearfix">
   <ul class="clearfix">
     <li><a href="Index.html">Home</a></li>
     <li><a href="calculate.html">Calculator</a></li>
     <li><a href="About.html">About</a></li>
-    <li><a href="#">blank</a></li>
-    <li><a href="#">blank</a></li>
+    <li><a href="#Register.html">Login</a></li>
+    <li><a href="#Login.html">Register</a></li>
     <li><a href="#">blank</a></li>
   </ul>
 </nav>
@@ -44,33 +47,30 @@
           will need to plant to be completely carbon neutral.</p>
       </div>
       <div class="col-xs-4 col-md-4 show-grid" style="border: solid; height:800px">
-        <form name="loginform" id="demo" action="demo_form.html" onsubmit="return validateForm()" method="get">
-          Login
-          <div class="form-group">
-            <input type="text" name="name" id="username" placeholder="Username" style="width:180px">
-          </div>
-          <div class="form-group">
-            <input type="password" name="password" id="password" placeholder="Password" style="width:180px">
-          </div>
-          <input type="submit" value="Log in">
-        </form>
+
+<!---http://www.formget.com/jquery-login-form/ --->
+          <form class="form" method="post" action="#">
+              <h2>Login</h2>
+              <input type="text" name="demail" id="email" placeholder="Email">
+              <br>
+              <input type="password" name="password" id="password" placeholder="Password">
+              <br>
+              <input type="button" name="login" id="login" value="Login">
+          </form>
+
         <br>
-        <form name="signupform" id="demo" action="demo_form.html" onsubmit="return validateForm()" method="get">
-          Sign Up
-          <div class="form-group">
-            <input type="text" name="name" id="username" placeholder="Username" style="width:180px">
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" id="email" placeholder="Email" style="width:180px">
-          </div>
-          <div class="form-group">
-            <input type="password" name="password" id="password" placeholder="Password" style="width:180px">
-          </div>
-          <div class="form-group">
-            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" style="width:180px">
-          </div>
-          <input type="submit" value="Register">
-        </form>
+          <form class="form" method="post" action="#register">
+              <h2>Register</h2>
+              <input type="text" name="dname" id="name" placeholder="Name">
+              <br>
+              <input type="text" name="demail" id="email" placeholder ="Email">
+              <br>
+              <input type="password" name="password" id="password" placeholder = "Password">
+              <br>
+              <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password">
+              <br>
+              <input type="button" name="register" id="register" value="Register">
+          </form>
       </div>
     </div>
   </div>
