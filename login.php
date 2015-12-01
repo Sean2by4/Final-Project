@@ -11,10 +11,11 @@ echo "Invalid Email.......";
 // Matching user input email and password with stored email and password in database.
 $result = mysql_query("SELECT * FROM registration WHERE email='$email' AND password='$password'");
 $data = mysql_num_rows($result);
+
+
 if($data==1){
-    session_start();
-    $_SESSION['useremail']=$email;
-echo "Successfully Logged in...";
+    $id = mysql_result(mysql_query("SELECT name FROM registration WHERE email='$email' LIMIT 1"),0);
+echo "Your current carbon emissions are: " . $id ;
 }else{
 echo "Email or Password is wrong...!!!!";
 }
