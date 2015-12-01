@@ -12,6 +12,8 @@ echo "Invalid Email.......";
 $result = mysql_query("SELECT * FROM registration WHERE email='$email' AND password='$password'");
 $data = mysql_num_rows($result);
 if($data==1){
+    session_start();
+    $_SESSION['useremail']=$email;
 echo "Successfully Logged in...";
 }else{
 echo "Email or Password is wrong...!!!!";
